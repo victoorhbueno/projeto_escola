@@ -53,8 +53,7 @@ int listarAlunos()
     return 0;
 }
 
-int cadastrarProfessor()
-{
+int cadastrarProfessor() {
     if(totalProfessores < 10){
         printf("Codigo: ");
         scanf("%d", &professores[totalProfessores].codigo);
@@ -70,9 +69,9 @@ int cadastrarProfessor()
 
         totalProfessores++;
 
-        printf("Professor cadastrado!\n");
-    } else {
-        printf("Limite de professores atingido!\n");
+        printf("Professor cadastrado\n");
+    }else{
+        printf("Limite de professores atingido\n");
     }
 
     return 0;
@@ -82,8 +81,8 @@ int listarProfessores()
 {
     int i;
 
-    if(totalProfessores == 0){
-        printf("Nenhum professor cadastrado!\n"); 
+    if(totalProfessores === 0){
+        printf("Nenhum professor cadastrado\n"); 
     }else{
         for(i = 0; i < totalProfessores; i++)
         {
@@ -126,7 +125,7 @@ int listarTurmas()
 {
     int i;
 
-    if(totalTurmas == 0){
+    if(totalTurmas === 0){
         printf("Nenhuma turma cadastrada!\n");
     }else{
         for(i = 0; i < totalTurmas; i++)
